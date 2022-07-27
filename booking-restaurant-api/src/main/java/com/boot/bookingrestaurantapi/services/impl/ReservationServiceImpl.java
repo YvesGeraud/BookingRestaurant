@@ -3,6 +3,7 @@ package com.boot.bookingrestaurantapi.services.impl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.boot.bookingrestaurantapi.entities.Reservation;
 import com.boot.bookingrestaurantapi.entities.Restaurant;
@@ -17,6 +18,7 @@ import com.boot.bookingrestaurantapi.repositories.RestaurantRepository;
 import com.boot.bookingrestaurantapi.repositories.TurnRepository;
 import com.boot.bookingrestaurantapi.services.ReservationService;
 
+@Service
 public class ReservationServiceImpl {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(ReservationServiceImpl.class);
